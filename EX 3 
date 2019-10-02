@@ -4,3 +4,11 @@ using PyPlot
 cap_img = imread("el-capitan.png")
 imshow(convert(Array{Float32,3}, cap_img))
 size(cap_img)
+
+#Part B Bullet B
+function extract_RGB(image_name)
+    R = image_name[:,:,1]
+    G = image_name[:,:,2]
+    B = image_name[:,:,3]
+    println(R,G,B)
+end
