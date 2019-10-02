@@ -1,0 +1,6 @@
+#Part A Bullet A
+using JLD
+using PyPlot
+cap_img = imread("el-capitan.png")
+imshow(convert(Array{Float32,3}, cap_img))
+size(cap_img)
